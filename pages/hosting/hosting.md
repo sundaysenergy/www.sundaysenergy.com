@@ -5,7 +5,6 @@ category : hosting
 tags : [hosting, prices, service]
 group: hosting
 ---
-{% include JB/setup %}
 
 ### Drupal Commerce Hosting
 $100/mo or $1,000/yr
