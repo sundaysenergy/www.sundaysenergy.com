@@ -1,0 +1,15 @@
+---
+title: Catalog
+description:
+
+---
+{{# pages.categories.catalog }}
+
+  <h4>{{ count }} {{ name }} Pages</h4>
+  <ul>
+  {{# pages?to_pages }}
+    <li><a href="{{ url }}">{{ sku }} {{ title }}</a></li>
+  {{/ pages?to_pages }}
+  </ul>
+
+{{/ pages.categories.catalog }}
