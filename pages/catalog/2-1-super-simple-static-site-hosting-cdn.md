@@ -1,5 +1,6 @@
 ---
 title: Super Simple Static Site Hosting
+sku: 2.1
 price: 60.00
 time: year
 layout: product
@@ -12,7 +13,6 @@ product:
       time   : 1 month
       price  : 6.00
       specs  : 1Gb of Storage and 10Gb of monthly transfer
-      trail  : 1 month
     - sku    : 2.1.2
       tag    : Basic
       time   : 1 year
