@@ -1,0 +1,63 @@
+#slides{
+	width: 100%;
+	position:relative;
+	overflow:hidden;
+	margin-bottom:89px;
+}
+.slides_container{
+	width:940px;
+	height:443px;
+	overflow:hidden;
+}
+.slide{width:940px; height:auto;}
+
+/* Control Nav */
+.prev, .next{
+	display:block;
+	width:16px;
+	height:25px;
+	overflow:hidden;
+	font-size:0;
+	line-height:0;
+	text-indent:-100%;
+	position:absolute;
+	top:0;
+	background-position:center top;
+	background-repeat:no-repeat;
+	z-index:995;
+}
+.prev{background:url(../images/prev.png); left:3px;}
+.next{background:url(../images/next.png); left:27px;}
+.prev:hover, .next:hover{background-position:center -34px;}
+
+/* Caption */
+.caption{
+	z-index:995;
+	position:absolute;
+	bottom:0px;
+	left:0;
+	width:140px;
+	padding-left:4px;
+	overflow:hidden;
+	font: bold 24px/29px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+}
+	.caption a{text-decoration:none; color:#4b433f;}
+		.caption a:hover{text-decoration:none; color:#eca637;}
+
+@media only screen and (max-width: 995px){
+	#slides{margin-bottom:30px;}
+	.slides_container{width:748px; height:353px;}
+	.slide{width:748px;}
+	.caption{font-size:16px; line-height:20px;}
+}
+@media only screen and (max-width: 767px){
+	.slides_container{width:420px; height:198px;}
+	.slide{width:420px;}
+	.prev{left:auto; right:27px;}
+	.next{left:auto; right:3px;}
+}
+@media only screen and (max-width: 479px){
+	.slides_container{width:300px; height:141px;}
+	.slide{width:300px;}
+}
