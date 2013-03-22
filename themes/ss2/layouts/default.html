@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- start: Meta -->
+  <meta charset="utf-8">
+  <title>{{data.title}}</title>
+  {{# page.description }}
+    <meta name="description" content="{{ . }}">
+  {{/ page.description }}
+
+  <meta name="author" content="{{ data.author.name }}">
+
+  <meta content="Sundays Energy, Drupal, Biodiesel, fast, Dropbox, CDN, DNS, dumper, super simple" name="keywords">
+  <!-- end: Meta -->
+
+  <!-- start: Mobile Specific -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+  <!-- end: Mobile Specific -->
+
+    <!-- start: CSS -->
+    {{{stylesheets.all}}}
+    <!-- end: CSS -->
+
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="{{urls.theme}}/stylesheets/nojs.css" />
+  </noscript>
+
+  <!-- start: favicon -->
+  <link href="http://www.sundaysenergy.com/assets/themes/se/images/favicon.png" rel="shortcut icon">
+  <!-- end: favicon -->
+
+  <!-- start: font -->
+<!--   <link href='http://fonts.googleapis.com/css?familhy=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
+ -->  <!-- end: font -->
+
+
+    <!--[if IE 9]>
+    <style>.social {display:none;}.navbar .nav > li > .connect {display:none;}</style>
+  <![endif]-->
+    <!--[if IE 8]>
+    <style>.ch-grid {float: left;}.ch-grid li {float: left;margin-left:100px;}.about-pattern {background-position: center;background-repeat: repeat-x;border:none;}}</style>
+  <![endif]-->
+  {{{javascripts.all}}}
+
+</head>
+
+<body>
+
+  <a id="home"></a><!--anchorLink: home -->
+
+  <!--start: Header -->
+  <header>
+
+    <div class="menu-fixed">
+
+      <!--start: Container -->
+      <div class="container">
+
+        <!--start: Row -->
+        <div class="row-fluid">
+
+          <h1><a href="/" class="logo">{{data.title}}</a></h1>
+
+        </div><!--end: Row -->
+      </div><!--end: Container -->
+
+    </div>
+
+  </header><!--end: Header -->
+
+{{{ content }}}
+
+  <footer>
+    <div class="wrapfooter">
+
+      <!-- start: Container -->
+      <div class="container">
+
+        <!-- start: Row -->
+        <div class="row">
+
+          <!-- start: copyright -->
+          <div class="span3">
+            <div class="copyright">
+              <p class="copyright">&copy; 2013 {{ data.author.name }}</p>
+            </div>
+          </div>
+
+          <div class="span9">
+            <div class="footer-social">
+              <a href="https://twitter.com/SundaysEnergy"><i class="icon-twitter"></i></a>
+              <a href="https://github.com/sundaysenergy"><i class="icon-github"></i></a>
+              <a href="http://www.linkedin.com/search?search=&amp;company=Sundays+Energy"><i class="icon-linkedin"></i></a>
+              <a href="https://www.facebook.com/pages/Sundays-Energy/369232703165225?fref=ts"><i class="icon-facebook"></i></a>
+              <a href="https://plus.google.com/115051972725141785005"><i class="icon-google-plus"></i></a>
+            </div>
+          </div>
+
+        </div><!-- end: Row -->
+      </div><!--end: Container -->
+
+    </div>
+  </footer>
+
+
+  <!-- start: script -->
+  {{{ widgets.analytics }}}
+  <!-- end: script -->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </body>
+
+</html>

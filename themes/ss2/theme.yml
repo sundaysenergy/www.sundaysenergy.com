@@ -1,0 +1,37 @@
+{
+    "stylesheets" : {
+      "default" : [
+        "bootstrap.css",
+        "bootstrap-responsive.css",
+        "font-awesome-ie7.min.css",
+        "font-awesome.css",
+        "parallax-content-slider.css",
+        "style.css",
+        "recurly.css",
+      ],
+
+      "widgets" : {
+        "google_prettify" : "twitter-bootstrap.css"
+      }
+
+    },
+
+    "javascripts" : {
+      "default" : [
+        "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js",
+        "bootstrap.min.js",
+        "gmap3.min.js",
+        "jquery.anchor.js",
+        "jquery.cslider.js",
+        "modernizr.custom.28468.js",
+        "jquery.query.js",
+        "custom.js",
+        "recurly.min.js",
+      ]
+    },
+
+    "manifest" : {
+      "author" : "Sundays Energy",
+      "website" : "http://www.sundaysenergy.com"
+    }
+  }

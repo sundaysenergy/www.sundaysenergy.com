@@ -1,9 +1,13 @@
 ---
-layout: page
+layout: product
 title: Google Apps Email Hosting
-category : hosting
-tags : [hosting, prices, service]
-group: hosting
+category :
+    - catalog
+    - cape
+product :
+    - sku : 3.3.1
+    
+
 ---
 ## Google Apps Email Hosting
 

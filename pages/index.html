@@ -3,27 +3,38 @@ title: Home
 description:
 ---
 
-{{# posts.paginator }}
-<div class="post">
-  <h3 class="title"><a href="{{url}}">{{title}}</a> <span class="date">{{ date }}</span></h3>
+  <!--start: clear-service -->
+  <div id="clear-service">
+    <div class="service-pattern">
+      <!--start: Container -->
+        <div class="container">
 
-  {{{ summary }}}
+        <a id="service"></a><!--anchorLink: service -->
 
-  <div class="more">
-    <a href="{{url}}" class="btn btn-small">read more..</a>
-  </div>
-</div>
-{{/ posts.paginator }}
+        <!-- start: Row -->
+        <div class="row">
 
-<div class="pagination">
-  <ul>
-  {{#posts.paginator_navigation}}
-    {{#is_active_page}}
-      <li class="active"><a href="{{url}}">{{name}}</a></li>
-    {{/is_active_page}}
-    {{^is_active_page}}
-      <li><a href="{{url}}">{{name}}</a></li>
-    {{/is_active_page}}
-  {{/posts.paginator_navigation}}
-  </ul>
-</div>
+          <div class="service">
+            <div class="span4">
+                <div class="ico-service"><i class="icon-cloud"></i></div>
+              <h2> <span class="firstword">SuperSimple</span> CDN</h2>
+              <p> Using the power of Dropbox, static HTML, and Content Delivery Networks we bring you a whole new website experience. Edit your files anywhere your Dropbox is available, and each time you save your website gets updated automatically.</p>
+            </div>
+            <div class="span4">
+                <div class="ico-service"><i class="icon-circle-arrow-down"></i></div>
+              <h2> <span class="firstword">Website</span> Dumper</h2>
+              <p> Website Dumper will give you a perfect static version of your existing website. This archive can be a replacement, the basis for a new website, or simply a copy to live on forever.</p>
+            </div>
+            <div class="span4">
+                <div class="ico-service"><i class="icon-star-empty"></i></div>
+              <h2> <span class="firstword">CAPE</span> </h2>
+              <p> Create Anywhere and Publish Everywhere with CMS Free websites! Pick any number of content sources and any number and displays and integrations. Maintain your internet presence using only Facebook or Markdown files in Dropbox. It's completely up to you. </p>
+            </div>
+          </div>
+
+        </div><!-- end: Row -->
+      </div><!-- end: container -->
+
+    </div><!-- end: service-pattern -->
+
+  </div><!-- end: service -->
