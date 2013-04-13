@@ -1,15 +1,17 @@
 ---
 title: CAPE
-sku: 3.0
+sku: 3.1
 price: 6.00
 categories: catalog
 description: Create Anywhere Publish Everywhere
 product:
-    - sku    : 3.0.1
+    - sku    : 3.1.1
 
 ---
 
 $6/mo or $60/yr
+
+
 
 ## Create Anywhere Publish Everywhere
 

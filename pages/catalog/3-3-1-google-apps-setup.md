@@ -6,6 +6,7 @@ category :
     - cape
 product :
     - sku : 3.3.1
+      price: 100
     
 
 ---
