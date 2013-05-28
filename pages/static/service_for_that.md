@@ -9,6 +9,34 @@ group: nav
 
 Wordpress has "plugins". Drupal has "modules". iPhones have "apps". The Internet has services.
 
+### Blog
+* Facebook
+* Twitter
+* Tumblr
+
+### Webforms
+
+* [Wufoo](http://www.wufoo.com)
+* [webform](https://webform.com)
+
+### Privacy Policy
+
+* [Iubenda](https://www.iubenda.com) Almost every site needs a privacy policy. It's the law. Any analytics or tracking.
+
+### Calendar
+
+* [Google Calendar](http://www.google.com/calendar/) (Can style from xml/rss stream)
+  * [gCalFlow](http://sugi.github.com/jquery-gcal-flow)
+  * [Full Calendar](http://arshaw.com/fullcalendar/)
+
+### Comments
+
+* [Disqus](http://disqus.com)
+
+### Cloud Actions
+* [If This Than That](https://ifttt.com)
+* [Zapier](https://zapier.com)
+
 ### Dropbox Hosting
 
 * [Site 44](http://www.site44.com) $5/mo
@@ -22,29 +50,14 @@ Wordpress has "plugins". Drupal has "modules". iPhones have "apps". The Internet
 
 * [Webscript](https://www.webscript.io) $5/mo
   * [Lua Underscore](http://mirven.github.com/underscore.lua)
-* [If This Than That](https://ifttt.com)
-* [Zapier](https://zapier.com)
 * [CloudWork](https://cloudwork.com)
 * [Transloadit](https://transloadit.com) - **Media** File Upload and Media conversions
-
-### Webforms
-
-* [Wufoo](http://www.wufoo.com)
-* [webform](https://webform.com)
 
 ### Communications
 
 * [Twilio](http://www.twilio.com/) Awesome API Telephony and SMS
 * [MailChimp](http://mailchimp.com/) 2,000 subscribers, 12,000/mo
 * [Campaign Monitor](http://www.campaignmonitor.com/) ("CreateSend" reseller option)
-
-### Comments
-
-* [Disqus](http://disqus.com)
-
-### Privacy Policy
-
-* [Iubenda](https://www.iubenda.com) Almost every site needs a privacy policy. It's the law. Any analytics or tracking.
 
 ### User Feedback
 
@@ -68,18 +81,15 @@ Wordpress has "plugins". Drupal has "modules". iPhones have "apps". The Internet
 * [Recurly](http://recurly.com/)
 * [Stripe](https://stripe.com/)
 
-### Calendar
-
-* [Google Calendar](http://www.google.com/calendar/) (Can style from xml/rss stream)
-  * [gCalFlow](http://sugi.github.com/jquery-gcal-flow)
-
 ### Maps
 
 * [Google Maps](http://maps.google.com/)
+* MapBox
 
 ### Learn to code
 
 * http://www.codecademy.com
+* https://www.codeschool.com
 
 ### Analytics
 
@@ -109,6 +119,7 @@ Wordpress has "plugins". Drupal has "modules". iPhones have "apps". The Internet
 * [Droplr](https://droplr.com)
 * [Dropmark](http://dropmark.com)
 * cloud app
+* [FilePicker](https://www.filepicker.io)
 
 ### Site Searching
 * [Tipue](http://www.tipue.com/search)
@@ -150,11 +161,12 @@ Wordpress has "plugins". Drupal has "modules". iPhones have "apps". The Internet
 * [3D Cart](http://www.3dcart.com)
 
 ### Events/Tickets
-* Facebook
-* Yelp
+* [Facebook](http://www.facebook.com)
+* [Yelp](http://www.yelp.com)
 * [Eventful](http://eventful.com)
 * [Event Brite](http://www.eventbrite.com)
 * [Artfully](https://www.artful.ly)
+* [Active RegOnline](http://www.regonline.com)
 
 ### Print friendly
 * http://www.printfriendly.com
@@ -166,4 +178,17 @@ Wordpress has "plugins". Drupal has "modules". iPhones have "apps". The Internet
 
 ### Scheduling
 * http://www.setster.com
-* 
+
+### Donations
+* http://flattr.com
+
+### Photo Sharing
+* Flickr
+* SmugMug
+* Instagram
+* http://photodune.net/
+* http://500px.com
+* http://www.sxc.hu
+
+### Notes
+* Evernote

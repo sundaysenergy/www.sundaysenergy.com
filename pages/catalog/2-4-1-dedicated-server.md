@@ -1,12 +1,11 @@
 ---
-title: Site Generator
-sku: 2.2.1
-price: 6.00
+title: Dedicated Server
+sku: 2.4.1
+price: 100.00
 categories: catalog
 
 ---
 
-$6/mo or $60/yr
 Access your hosting files using dropbox.
 
 Generate a website from a folder of plain text files. Each text file represents a page on the site. These files can contain plaintext, [markdown](), or html code - whichever format you wish to work in.

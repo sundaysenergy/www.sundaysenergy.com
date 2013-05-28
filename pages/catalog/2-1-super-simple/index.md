@@ -2,8 +2,7 @@
 layout: product
 title: Super Simple Static Site Hosting
 sku: 2.1
-price: 60.00
-time: year
+sku-default: 2.1.1
 categories:
     - hosting
     - catalog
