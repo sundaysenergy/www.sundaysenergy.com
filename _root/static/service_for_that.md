@@ -192,3 +192,4 @@ Wordpress has "plugins". Drupal has "modules". iPhones have "apps". The Internet
 
 ### Notes
 * Evernote
+* SimpleNote
