@@ -1,16 +1,15 @@
 title : Sundays Energy
-tagline: Blog Tagline
+tagline: "Drupal Upgrades & Conversions"
+description: "Drupal upgrades and conversions. When you're stuck with an old version."
 author :
-  name : Sundays Energy, Inc.
+  name : "Sundays Energy, Inc."
   email : kai@sundaysenergy.com
-  github : username
+  github : sundaysenergy
   twitter : sundaysenergy
-  feedburner : feedname
 
 navigation :
-  - archive.html
-  - tags.html
-  - categories.html
-  - pages.html
-  - about.md
-
+  - archive
+  - tags
+  - categories
+  - pages
+  - about

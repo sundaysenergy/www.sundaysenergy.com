@@ -1,3 +1,7 @@
+/* ===== Custom Styles =====================================================
+   Author: Girault Mickael
+   ========================================================================== */
+
 
 /* ===== Body and structure ===== */
 
@@ -8,7 +12,7 @@ body{
 }
 a{
   text-decoration: none !important;
-  color: #7D603E;
+  color: #e4333c;
 }
 a:hover{
   text-decoration: none !important;
@@ -27,7 +31,7 @@ ul.icons {
   background-color: #141414;
   border: 5px solid #232323;
   margin-bottom: 10px;
-  color: #7D603E;
+  color: #e4333c;
 }
 
 /* ===== @image ===== */
@@ -51,7 +55,7 @@ h3 {
   line-height: 20px;
 }
 /*.title{
-  border-left: 5px solid #7D603E;
+  border-left: 5px solid #e4333c;
   padding: 0px 1px 1px 10px;
   margin: 70px 0 25px 0;
 }*/
@@ -61,7 +65,7 @@ h3 {
   margin: 70px 0 25px 0;
 }
 .title-modal{
-  border-left: 5px solid #7D603E;
+  border-left: 5px solid #e4333c;
   padding: 0px 1px 1px 10px;
   margin: 15px 0 15px 0;
 }
@@ -134,7 +138,7 @@ h3 {
 }
 .navbar .nav > li > a {
     font-weight: normal;
-    color: #7D603E;
+    color: #e4333c;
     padding: 7px 12px;
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
@@ -146,24 +150,24 @@ h3 {
 .navbar-inverse .nav > li > a:focus, .navbar-inverse .nav > li > a:hover {
     background-color: transparent;
     color: #FFFFFF;
-    background-color: #7D603E;
+    background-color: #e4333c;
 }
 .navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
     background-color: transparent;
     color: #FFFFFF;
-    background-color: #7D603E;
+    background-color: #e4333c;
     text-shadow:none;
 }
 .navbar-inverse .btn-navbar:hover, .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.disabled, .navbar-inverse .btn-navbar[disabled] {
-    background-color: #7D603E !important;
+    background-color: #e4333c !important;
     color: #FFFFFF !important;
     box-shadow: none;
 }
 .navbar-inverse .nav-collapse .nav > li > a {
-    color: #7D603E;
+    color: #e4333c;
 }
 .navbar-inverse .nav-collapse .nav > li > a:hover {
-    background-color: #7D603E;
+    background-color: #e4333c;
     color: #FFFFFF;
 }
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
@@ -171,7 +175,7 @@ h3 {
     text-decoration: none;
 }
 .navbar-inverse .btn-navbar {
-    background-color: #7D603E;
+    background-color: #e4333c;
     background-image: none;
     background-repeat: no-repeat;
     border-color: transparent;
@@ -203,7 +207,7 @@ h3 {
   border-bottom: 5px solid #fce7e7;
 }
 .baseline{
-  color: #7D603E;
+  color: #e4333c;
   text-align: center;
 }
 .arrow-down {
@@ -217,14 +221,14 @@ h3 {
 .service-pattern{
   background: url(../media/subtle_dots.png) repeat;
   padding-bottom: 100px;
-  border-top: 10px solid #7D603E;
+  border-top: 10px solid #e4333c;
 }
 .service{
   text-align: center;
 }
 .service .ico-service{
   font-size: 90px;
-  color: #7D603E;
+  color: #e4333c;
   margin:40px 0;
 }
 .service h2{
@@ -237,7 +241,7 @@ h3 {
 /* ===== @quote ===== */
 
 .quote{
-  background-color: #7D603E;
+  background-color: #e4333c;
   text-align: center;
   padding:0 0 30px 0;
 }
@@ -302,7 +306,7 @@ h3 {
 }
 .modal-header {
   background: #FFF;
-  border-bottom: 5px solid #7D603E;
+  border-bottom: 5px solid #e4333c;
 }
 .modal-header .close {
   color: #000;
@@ -330,7 +334,7 @@ h3 {
   margin:50px;
 }
 .about-us .title {
-    border-left: 5px solid #7D603E;
+    border-left: 5px solid #e4333c;
     margin: 10px 0 25px;
     padding: 0 1px 1px 10px;
 }
@@ -348,7 +352,7 @@ h3 {
 /* ===== @social ===== */
 
 .social{
-  background-color: #7D603E;
+  background-color: #e4333c;
   display: block;
 }
 .social p{
@@ -390,7 +394,7 @@ h3 {
 .ch-info-wrap {
   top: 10px;
   left: 10px;
-  background: #7D603E;
+  background: #e4333c;
   box-shadow:
   0 0 0 20px rgba(255,255,255,0.2),
   inset 0 0 3px rgba(115,114, 23, 0.8);
@@ -437,7 +441,7 @@ h3 {
   transition: all 0.4s ease-in-out 0.2s;
 }
 .ch-info .ch-info-back i{
-  color: #7D603E;
+  color: #e4333c;
 }
 .ch-img-1 {
   background-image: url(../media/social/twitter.jpg);
@@ -494,11 +498,11 @@ h3 {
   background: url(../media/tiny_grid.png) repeat scroll;
 }
 .contact-pattern i{
-  color: #7D603E;
+  color: #e4333c;
   padding-right: 5px;
 }
 .input-append .add-on, .input-prepend .add-on {
-  background-color: #7D603E;
+  background-color: #e4333c;
   border: 1px solid #FFFFFF;
   text-shadow: 0 0px 0 #FFFFFF;
   color: #FFFFFF;
@@ -536,21 +540,21 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 .send {
   display: block;
-  background-color: #7D603E;
-  background-image: -moz-linear-gradient(top, #7D603E, #7D603E);
-  background-image: -ms-linear-gradient(top, #7D603E, #7D603E);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7D603E), to(#7D603E));
-  background-image: -webkit-linear-gradient(top, #7D603E, #7D603E);
-  background-image: -o-linear-gradient(top, #7D603E, #7D603E);
-  background-image: linear-gradient(top, #7D603E, #7D603E);
+  background-color: #e4333c;
+  background-image: -moz-linear-gradient(top, #e4333c, #e4333c);
+  background-image: -ms-linear-gradient(top, #e4333c, #e4333c);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e4333c), to(#e4333c));
+  background-image: -webkit-linear-gradient(top, #e4333c, #e4333c);
+  background-image: -o-linear-gradient(top, #e4333c, #e4333c);
+  background-image: linear-gradient(top, #e4333c, #e4333c);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7D603E', endColorstr='#7D603E', GradientType=0);
-  border-color: #7D603E #7D603E #FFFFFFFFFFFF;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4333c', endColorstr='#e4333c', GradientType=0);
+  border-color: #e4333c #e4333c #FFFFFFFFFFFF;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .send:hover,.send:active,.send.active,.send.disabled,.send[disabled] {
-  background-color: #7D603E;
+  background-color: #e4333c;
 }
 .input-append, .input-prepend {
     margin-bottom: 15px;
@@ -575,7 +579,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   padding: 15px 0;
 }
 p.copyright {
-  color: #7D603E;
+  color: #e4333c;
   margin: 0 auto;
   text-align: center;
 }
