@@ -1,53 +1,197 @@
 ---
 layout : default
 ---
-<div class="page-header">
-  <h1>{{ page.title }} {{# page.tagline }} <small>{{ . }}</small>{{/ page.tagline }}</h1>
-</div>
 
-<div class="row">
-  <div class="span8">
-    {{{ page.content }}}
-    <hr>
-    <div class="pagination">
-      <ul>
-        {{# page.previous }}
-          <li class="prev"><a href="{{ url }}" title="{{ title }}">&larr; Previous</a></li>
-        {{/ page.previous }}
-        {{^ page.previous }}
-          <li class="prev disabled"><a>&larr; Previous</a></li>
-        {{/ page.previous }}
+<div id="blog_wrapper" class="blog_post">
+    <div class="container">
+        <div class="row">
 
-          <li><a href="{{urls.base_url}}archive">Archive</a></li>
+            <div class="span8">
 
-        {{# page.next }}
-          <li class="next"><a href="{{ url }}" title="{{ title }}">Next &rarr;</a></li>
-        {{/ page.next }}
-        {{^ page.next }}
-          <li class="next disabled"><a>Next &rarr;</a>
-        {{/ page.next }}
-      </ul>
+                <h1 class="header"> {{ page.title }} </h1>
+
+                <img class="post_pic" src="{{urls.theme}}/media/blog_post.jpg" />
+
+                <div class="post_content">
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                    </p>
+                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+
+                    <div class="author">Alejandra Galvan</div>
+                    <div class="date">Oct 12, 2012</div>
+                </div>
+
+                <div class="comments">
+                    <h4>Comments</h4>
+
+                    <div class="comment">
+                        <div class="row">
+                            <div class="span1">
+                                <img src="{{urls.theme}}/media/pic1.jpg" class="img-circle author_pic" />
+                            </div>
+                            <div class="span6">
+                                <div class="name">
+                                    Alejandra Galvan
+                                    <a href="blog-post.html#" class="reply">Reply</a>
+                                </div>
+                                <div class="date">
+                                    Oct 12, 2012
+                                </div>
+                                <div class="response">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="row">
+                            <div class="span1">
+                                <img src="{{urls.theme}}/media/pic1.jpg" class="img-circle author_pic" />
+                            </div>
+                            <div class="span6">
+                                <div class="name">
+                                    Alejandra Galvan
+                                    <a href="blog-post.html#" class="reply">Reply</a>
+                                </div>
+                                <div class="date">
+                                    Oct 12, 2012
+                                </div>
+                                <div class="response">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment reply_to">
+                        <div class="row">
+                            <div class="span1 offset1">
+                                <img src="{{urls.theme}}/media/pic1.jpg" class="img-circle author_pic" />
+                            </div>
+                            <div class="span5">
+                                <div class="name">
+                                    Alejandra Galvan
+                                    <a href="blog-post.html#" class="reply">Reply</a>
+                                </div>
+                                <div class="date">
+                                    Oct 12, 2012
+                                </div>
+                                <div class="response">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="row">
+                            <div class="span1">
+                                <img src="{{urls.theme}}/media/pic1.jpg" class="img-circle author_pic" />
+                            </div>
+                            <div class="span6">
+                                <div class="name">
+                                    Alejandra Galvan
+                                    <a href="blog-post.html#" class="reply">Reply</a>
+                                </div>
+                                <div class="date">
+                                    Oct 12, 2012
+                                </div>
+                                <div class="response">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new_comment">
+                    <h4>Add Comment</h4>
+                    <form>
+                        <div class="row">
+                            <div class="span3">
+                                <input type="text" placeholder="Name" name="name" />
+                            </div>
+                            <div class="span3">
+                                <input type="text" placeholder="Email" name="email" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="span6">
+                                <textarea placeholder="Comments" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="span6">
+                                <a href="blog-post.html#" class="btn">Add comment</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="span3 sidebar offset1">
+
+                <input type="text" class="input-large search-query" placeholder="Search">
+
+                <h4 class="sidebar_header">
+                    Menu
+                </h4>
+
+                <ul class="sidebar_menu">
+                    <li><a href="blog-post.html#">Suspendisse Semper Ipsum</a></li>
+                    <li><a href="blog-post.html#">Maecenas Euismod Elit</a></li>
+                    <li><a href="blog-post.html#">Suspendisse Semper Ipsum</a></li>
+                    <li><a href="blog-post.html#">Maecenas Euismod Elit</a></li>
+                    <li><a href="blog-post.html#">Suspendisse Semper Ipsum</a></li>
+                </ul>
+
+                <h4 class="sidebar_header">
+                    Recent posts
+                </h4>
+
+                <ul class="recent_posts">
+                    <li>
+                        <div class="row">
+                            <div class="span1">
+                                <a href="blog-post.html#">
+                                    <img class="thumb" src="{{urls.theme}}/media/pic_blog.png" />
+                                </a>
+                            </div>
+                            <div class="span2">
+                                <a class="link" href="blog-post.html#">Suspendisse Semper Ipsum</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="span1">
+                                <a href="blog-post.html#">
+                                    <img class="thumb" src="{{urls.theme}}/media/pic_blog.png" />
+                                </a>
+                            </div>
+                            <div class="span2">
+                                <a class="link" href="blog-post.html#">Maecenas Euismod Elit</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="span1">
+                                <a href="blog-post.html#">
+                                    <img class="thumb" src="{{urls.theme}}/media/pic_blog.png" />
+                                </a>
+                            </div>
+                            <div class="span2">
+                                <a class="link" href="blog-post.html#">Suspendisse Semper Ipsum</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
     </div>
-    <hr>
-    {{{ widgets.comments }}}
-  </div>
-  
-  <div class="span4">
-    <h4>Published</h4>
-    <div class="date"><span>{{ page.date }}</span></div>
-    <br>
-    <h4>Categories</h4>
-    <ul class="tag_box">
-    {{# page.categories }}
-      {{> categories_list }}
-    {{/ page.categories }}
-    </ul>
-    <br>
-    <h4>Tags</h4>
-    <ul class="tag_box">
-    {{# page.tags }}
-      {{> tags_list }}
-    {{/ page.tags }}
-    </ul>
-  </div>
 </div>

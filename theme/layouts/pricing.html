@@ -1,0 +1,190 @@
+---
+layout : default
+---
+
+<!-- pricing -->
+<div id="pricing" class="pricing_page">
+  <div class="container">
+
+    <!-- header -->
+    <h2 class="section_header">
+      <hr class="left visible-desktop">
+      <span>
+        {{page.title}} 
+        <small>{{page.sub-title}}</small>
+      </span>
+      <hr class="right visible-desktop">
+    </h2>
+
+    <div class="row">
+      <div class="span12">
+        <div class="lead">
+          {{{ content }}}
+        </div>
+      </div>
+    </div>
+
+    <!-- pricing charts 1 -->
+    <div class="row">
+      {{# catalog.categories.hosting }}
+        {{# catalog?to_catalog }}
+          <div class="span4">
+            <div class="price_wrapper {{div-class}}">
+              <div class="header">
+                <span>{{sub-title}} <small>{{sku}}</small></span>
+                <div class="price">
+                    <span>$ {{price}}</span>
+                    {{time}}
+                </div>
+              </div>
+              <div class="section">
+                <h3>{{description}}</h3>
+                <ul class="perks">
+                  <li>
+                    <i class="icon-road"></i>
+                      Super Fast-loading
+                  </li>
+                  <li>
+                    <i class="icon-folder-open"></i>
+                      {{storage}} of Disk Space
+                  </li>
+                  <li>
+                    <i class="icon-edit"></i>
+                      {{database}} of SSD Database Space
+                  </li>
+                  <li>
+                    <i class="icon-arrow-up"></i>
+                      {{bandwidth}} of Monthly Transfer
+                  </li>
+                  {{#ssl}}
+                    <li>
+                      <i class="icon-lock"></i>
+                        Dedicated IP and SSL Certificate
+                    </li>
+                  {{/ssl}}
+                </ul>
+                <a href="#" class="btn" id="{{button-id}}">Order now</a>
+              </div>
+            </div>
+          </div>
+        {{/ catalog?to_catalog }}
+      {{/ catalog.categories.hosting }}
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="drupal_hosting" style="display: none; " aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Drupal Hosting</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1" id="drupal_body">
+            <div class="alert alert-block alert-error fade in" style="display:none">
+              <button type="button" class="close" data-dismiss="alert">x</button>
+              <h4 class="alert-heading">Error processing your request</h4>
+              <p>There was an error processing your request. Please check your information and try again.</p>
+            </div>
+            
+            <form action="/pay" method="POST" id="payment-form" class="form-horizontal">
+              <div class="form-group">
+                <label class="control-label">Your Name</label>
+                <div class="controls">
+                  <input class="form-control" name="from" type="text" placeholder="Your Name..." id="from">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">Your Email</label>
+                <div class="controls">
+                  <input class="form-control" name="from_email" type="text" placeholder="Your Email..." id="from_email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">Hosting Option</label>
+                <div class="controls">
+                  <select class="form-control" name="plan">
+                    <option value="drupalmonthly">$50/month</option>
+                    <option value="drupalyearly">$500/year</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">Card Number</label>
+                <div class="controls">
+                  <input type="text" autocomplete="off" class="card-number form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">CVC</label>
+                <div class="controls">
+                  <input type="text" autocomplete="off" class="card-cvc form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">Expiration</label>
+                <div class="controls">
+                  <input type="text" class="card-expiry-month form-control" placeholder="MM" style="width:20%; float:left;">
+                  <input type="text" class="card-expiry-year form-control" placeholder="YYYY" style="width:30%; margin-left:10px;">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label"></label>
+                <div class="controls">
+                  <button type="submit" class="submit-button btn btn-primary" style="border: 4px solid #444" data-loading-text="Processing...">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+<script src="https://js.stripe.com/v1/"></script>
+<script>
+  Stripe.setPublishableKey('pk_test_S7NgbL3HuxgIXP7uMjQZ0U0Y');
+  var $ = jQuery;
+  $(document).ready(function() {
+    $('#get_drupal_hosting').click(function(e) {
+      e.preventDefault();
+      $('#drupal_hosting').modal();
+    });
+    $("#payment-form").submit(function(event) {
+      $(".alert").hide();
+      $('.submit-button').attr("disabled", "disabled");
+      
+      Stripe.createToken({
+        number: $('.card-number').val(),
+        cvc: $('.card-cvc').val(),
+        exp_month: $('.card-expiry-month').val(),
+        exp_year: $('.card-expiry-year').val()
+      }, stripeResponseHandler);
+
+      function stripeResponseHandler(status, response) {
+        if (response.error) {
+          $(".alert").show();
+          $(".alert").append('<p>Server said: ' + response.error.message + '</p>');
+          $('.submit-button').removeAttr('disabled');
+          $('.submit-button').attr("value", "Submit");
+        } else {
+          var form$ = $("#payment-form");
+          var token = response['id'];
+          var plan = form$.find('select[name="plan"]').val();
+          var email = form$.find('input[id="from_email"]').val();
+          var $posting = $.post('https://sundaysenergy.herokuapp.com/pay', { 'plan' : plan, 'stripeToken' : token, 'from_email' : email });
+          $posting.done(function() {
+            console.log("DONE");
+            $('#drupal_body').html("THANKS!");
+          });
+          //form$.append("<input type='hidden' name='stripeToken' value='" + token + "'/>");
+          //form$.get(0).submit();
+        }
+      }
+      return false;
+    });
+  });
+</script>

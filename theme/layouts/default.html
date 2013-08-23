@@ -1,129 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-
-  <!-- start: Meta -->
-  <meta charset="utf-8">
-  <title>{{data.title}} - {{data.tagline}}</title>
-  <meta content="Super Simple - Static Website Hosting. Dropbox upload, Dynect DNS, Akamai CDN" name="description">
-  <meta content="light, responsive, fast, Dropbox, CDN, DNS" name="keywords">
-  <!-- end: Meta -->
-
-  <!-- start: Mobile Specific -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-  <!-- end: Mobile Specific -->
-
-    <!-- Le styles -->
-    {{# stylesheets.load }}
-      bootstrap-responsive.css
-      bootstrap.css
-      font-awesome-ie7.min.css
-      font-awesome.css
-      nojs.css
-      parallax-content-slider.css
-      recurly.css
-      style.css
-    {{/ stylesheets.load }}
-  <noscript>
-    <link rel="stylesheet" type="text/css" href="css/nojs.css" />
-  </noscript>
-
-  <!-- start: favicon -->
-  <link href="http://www.sundaysenergy.com/assets/themes/se/images/favicon.png" rel="shortcut icon">
-  <!-- end: favicon -->
-
-  <!-- start: font -->
-<!--   <link href='http://fonts.googleapis.com/css?familhy=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
- -->  <!-- end: font -->
-
-
-    <!--[if IE 9]>
-    <style>.social {display:none;}.navbar .nav > li > .connect {display:none;}</style>
-  <![endif]-->
-    <!--[if IE 8]>
-    <style>.ch-grid {float: left;}.ch-grid li {float: left;margin-left:100px;}.about-pattern {background-position: center;background-repeat: repeat-x;border:none;}}</style>
-  <![endif]-->
-    {{# javascripts.load }}
-      jquery.js
-      modernizr.custom.28468.js
-      bootstrap.min.js
-      gmap3.min.js
-      jquery.anchor.js
-      jquery.cslider.js
-      jquery.query.js
-      recurly.min.js
-      custom.js
-    {{/ javascripts.load }}
+  <title>{{ page.title }} - {{ data.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  {{# stylesheets.load }}
+    blog.css
+    theme.css
+    external-pages.css
+  {{/ stylesheets.load }}
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
-
 <body>
-
-  <a id="home"></a><!--anchorLink: home -->
-
-  <!--start: Header -->
-  <header>
-
-    <div class="menu-fixed">
-
-      <!--start: Container -->
+  <a href="blog-post.html#" class="scrolltop">
+      <span>up</span>
+  </a>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
       <div class="container">
-
-        <!--start: Row -->
-        <div class="row-fluid">
-
-          <h1><a href="/" class="logo">{{data.title}}</a></h1>
-
-        </div><!--end: Row -->
-      </div><!--end: Container -->
-
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">
+            Sundays Energy
+          </a>
+          <div class="nav-collapse collapse">
+              <ul class="nav pull-right">
+                  {{# data.navigation?to__root }}
+                    {{> pages_list }}
+                  {{/ data.navigation?to__root }}
+                  <li class="dropdown">
+                      <a href="blog-post.html#" class="dropdown-toggle" data-toggle="dropdown">
+                          External Pages
+                          <b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="features.html">Features</a></li>
+                          <li><a href="pricing.html">Pricing</a></li>
+                          <li><a href="portfolio.html">Portfolio</a></li>
+                          <li><a href="coming-soon.html">Coming Soon</a></li>
+                          <li><a href="aboutus.html">About us</a></li>
+                          <li><a href="contact.html">Contact us</a></li>
+                          <li><a href="faq.html">FAQ</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="btn-header" href="signup.html">Sign up</a>
+                  </li>
+                  <li><a class="btn-header" href="signin.html">Sign in</a></li>
+              </ul>
+          </div>
+      </div>
     </div>
+  </div>
 
-  </header><!--end: Header -->
+  {{{ content }}}
 
-{{{ content }}}
-
-  <footer>
-    <div class="wrapfooter">
-
-      <!-- start: Container -->
+  <div id="footer">
       <div class="container">
+          <div class="row">
+              <span class="span8">
+                  <h3>From the Blog</h3>
+                  <div class="blog_post">
+                      <div class="row">
+                          <div class="span2">
+                              <a href="blog.html">
+                                  <img src="{{urls.theme}}/media/pic_blog.png" class="img-circle" />
+                              </a>
+                          </div>
+                          <div class="span4">
+                              <a href="blog.html" class="title">
+                                  Lorem Ipsum is simply dummy 
+                              </a>
+                              <div class="intro">
+                                  There are many variations of passages of Lorem alteration in some form by injected look even slightly believable.
+                              </div>
+                              <div class="date">
+                                  Oct 22. 2012
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </span>
+              <span class="span4 contact_us">
+                  <h3>Contact Us</h3>
+                  <form class="form-horizontal">
+                      <div class="field">
+                          <div class="label_field">
+                              <label for="inputName">Name</label>
+                          </div>
+                          <input type="text" id="inputName" />
+                      </div>
 
-        <!-- start: Row -->
-        <div class="row">
+                      <div class="field">
+                          <div class="label_field">
+                              <label for="inputEmail">Email</label>
+                          </div>
+                          <input type="text" id="inputEmail" />
+                      </div>
 
-          <!-- start: copyright -->
-          <div class="span3">
-            <div class="copyright">
-              <p class="copyright">&copy; 2013 <a href="http://www.sundaysenergy.com">{{ data.author.name }}</a></p>
-            </div>
+                      <div class="field">
+                          <div class="label_field">
+                              <label for="inputCity">City</label>
+                          </div>
+                          <input type="text" id="inputCity" />
+                      </div>
+
+                      <div class="field">
+                          <div class="label_field">
+                              <label for="inputComment">Comments</label>
+                          </div>
+                          <textarea name="comments"></textarea>
+                      </div>
+                      <button type="submit" class="btn">Send</button>
+                  </form>
+              </span>
           </div>
-
-          <div class="span9">
-            <div class="footer-social">
-              <a href="https://twitter.com/SundaysEnergy"><i class="icon-twitter"></i></a>
-              <a href="https://github.com/sundaysenergy"><i class="icon-github"></i></a>
-              <a href="http://www.linkedin.com/search?search=&amp;company=Sundays+Energy"><i class="icon-linkedin"></i></a>
-              <a href="https://www.facebook.com/pages/Sundays-Energy/369232703165225?fref=ts"><i class="icon-facebook"></i></a>
-              <a href="https://plus.google.com/115051972725141785005"><i class="icon-google-plus"></i></a>
-            </div>
+          <hr>
+          <div class="row copyright">
+              <div class="span5">
+                  <h3>Social</h3>
+                  <a href="blog-post.html#" class="social fb">
+                      <i class="i_facebook"></i>
+                  </a>
+                  <a href="blog-post.html#" class="social tw">
+                      <i class="i_twitter"></i>
+                  </a>
+                  <a href="blog-post.html#" class="social yt">
+                      <i class="i_youtube"></i>
+                  </a>
+              </div>
+              <div class="span2 offset5 copy">
+                  <p>2012 - {{data.title}}</p>
+              </div>
           </div>
+      </div>
+  </div>
 
-        </div><!-- end: Row -->
-      </div><!--end: Container -->
-
-    </div>
-  </footer>
-
-
-  <!-- start: script -->
-  {{{ widgets.analytics }}}
-  <!-- end: script -->
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-  </body>
-
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+  {{# javascripts.load }}
+    theme.js
+  {{/ javascripts.load }}
+</body>
 </html>

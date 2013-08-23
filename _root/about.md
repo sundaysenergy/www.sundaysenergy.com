@@ -1,11 +1,12 @@
 ---
 title : About
 description:
+div-id: about
+div-class: about_page
+intro: Sundays Energy is a web technology company based in Minneapolis, Minnesota. Organic, holistic solutions to the digital world, one web project at a time.
 
 ---
 
-Sundays Energy is a web technology company based in Minneapolis, Minnesota.
+We collaborate with clients to create original, valuable web projects using almost anything as a data feed (content repository) and publishing that data to custom built websites, widgets or other social media outlets.
 
-We collaborate with clients to create original, valuable web projects using the popular Drupal platform. We offer cost-effective ongoing site maintenance and updates so your site is always secure and up-to-date.
-
-With the power of Drupal, we fashion user-friendly ways to manage your website. And clients are encouraged to manage their site as much as they like.
+The pain of dealing with a Content Management System is gone. Simply continue to use the web tool(s) you prefer and we'll display it where it needs to be.

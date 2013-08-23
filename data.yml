@@ -8,8 +8,5 @@ author :
   twitter : sundaysenergy
 
 navigation :
-  - archive
-  - tags
-  - categories
-  - pages
   - about
+  - drupal-hosting

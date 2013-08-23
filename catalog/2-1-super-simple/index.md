@@ -4,7 +4,6 @@ title: Super Simple Static Site Hosting
 sku: 2.1
 sku-default: 2.1.1
 categories:
-    - hosting
     - catalog
 product:
     - sku    : 2.1.1

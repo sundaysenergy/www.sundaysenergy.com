@@ -2,14 +2,27 @@
 layout : default
 ---
 
-<div class="container">
-  <div class="page-header">
-    <h1>{{ page.title }} {{# page.tagline }} <small>{{ . }}</small>{{/ page.tagline }}</h1>
-  </div>
+<!-- coming soon -->
+<div id="{{ page.div-id }}" class="{{ page.div-class }}">
+  <div class="container">
 
-  <div class="row">
-  <div class="span12">
-    {{{ page.content }}}
-  </div>
+    <h2 class="section_header">
+      <hr class="left visible-desktop">
+      <span>{{ page.title }}</span>
+      <hr class="right visible-desktop">
+    </h2>
+
+    <div class="row">
+        <div class="span12">
+            <h3 class="intro">
+                {{ page.intro }}
+            </h3>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="span12">
+        {{{ page.content }}}
+      </div>
   </div>
 </div>
