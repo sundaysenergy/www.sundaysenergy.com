@@ -1,5 +1,6 @@
 $('document').ready(function() {
   $('#get_drupal_hosting').on('click', function(e) {
+    console.log("got here!");
     e.preventDefault();
     $('#drupal_hosting').modal();
   });
