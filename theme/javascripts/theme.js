@@ -42,4 +42,5 @@ $(function () {
         //IE7 and 8 stuff
         $("body").addClass("old-ie");
     }
+    OAuth.initialize('aSOjwnUIZ2k-r1gYcA1lix_Fc9s');
 });
