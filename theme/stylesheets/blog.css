@@ -176,6 +176,13 @@
 	text-decoration: underline;
 }
 
+#drupal_hosting .modal-body {
+  font-size: 5em;
+}
+.icon-github {
+  cursor: pointer;
+}
+
 /* Responsive
 -------------------------------------------------- */
 
