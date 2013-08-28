@@ -7,7 +7,7 @@
   <!-- Bootstrap -->
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
   {{# stylesheets.load }}
     blog.css
     theme.css
@@ -28,7 +28,7 @@
               <span class="icon-bar"></span>
           </a>
           <a class="brand" href="/">
-            Sundays Energy
+            {{ data.title }}
           </a>
           <div class="nav-collapse collapse">
               <ul class="nav pull-right">
@@ -76,7 +76,7 @@
                           </div>
                           <div class="span4">
                               <a href="blog.html" class="title">
-                                  Lorem Ipsum is simply dummy 
+                                  Lorem Ipsum is simply dummy
                               </a>
                               <div class="intro">
                                   There are many variations of passages of Lorem alteration in some form by injected look even slightly believable.
@@ -126,23 +126,22 @@
           <div class="row copyright">
               <div class="span5">
                   <h3>Social</h3>
-                  <a href="blog-post.html#" class="social fb">
+                  <a href="https://www.facebook.com/{{data.author.facebook}}" class="social fb">
                       <i class="i_facebook"></i>
                   </a>
-                  <a href="blog-post.html#" class="social tw">
+                  <a href="https://twitter.com/{{data.author.twitter}}" class="social tw">
                       <i class="i_twitter"></i>
                   </a>
-                  <a href="blog-post.html#" class="social yt">
-                      <i class="i_youtube"></i>
+                  <a href="https://github.com/{{data.author.github}}" class="social gh">
+                      <i class="i_github"></i>
                   </a>
               </div>
-              <div class="span2 offset5 copy">
-                  <p>2012 - {{data.title}}</p>
+              <div class="span3 offset4 copy">
+                  <p>2013 - {{data.title}}</p>
               </div>
           </div>
       </div>
   </div>
-  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
   <script src="https://js.stripe.com/v1/"></script>
   {{# javascripts.load }}
     oauth.js
