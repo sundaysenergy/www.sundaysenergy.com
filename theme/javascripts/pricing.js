@@ -8,7 +8,18 @@ $('document').ready(function() {
     e.preventDefault();
     OAuth.popup('github', function(err, result) {
       $('#drupal_hosting .modal-body').css('font-size', '1.3em');
-      $('#drupal_hosting .modal-body').html(result.access_token);
+      
+      $.ajax({
+        url: 'https://api.github.com/user',
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+          $('#drupal_hosting .modal-body').html(JSON.stringify(data));
+        },
+        beforeSend: function(xhr) {
+          xhr.setRequestHeader('Authorization', 'token ' + result.access_token);
+        }
+      });
     });
   });
 });
