@@ -46,8 +46,14 @@ $(function () {
 });
 
 function getCookie(name) {
-  var parts = document.cookie.split(name + "=");
-  if (parts.length == 2) return parts.pop().split(";").shift();
+  name += '=';
+  var parts = document.cookie.split(/;\s*/);
+  for (var i = 0; i < parts.length; i++) {
+    var part = parts[i];
+    if (part.indexOf(name) == 0)
+      return part.substring(name.length)
+  }
+  return null;
 }
 
 $('document').ready(function() {
