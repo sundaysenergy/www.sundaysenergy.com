@@ -10,6 +10,8 @@ description: Legacy Drupal 5 using PHP 5.2
 storage: 60GB
 bandwidth: 1TB
 ssl: false
+database: 4GB
+button-id: hosting-2-5-5
 
 ---
 

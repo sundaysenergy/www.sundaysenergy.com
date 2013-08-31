@@ -15,7 +15,7 @@ $(function () {
         }        
     });
 
-    $('#myCarousel').carousel('cycle');
+    // $('#myCarousel').carousel('cycle');
 
     // scroll back to top btn
     $('.scrolltop').click(function(){

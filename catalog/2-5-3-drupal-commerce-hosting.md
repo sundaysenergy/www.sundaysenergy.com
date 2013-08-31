@@ -10,6 +10,8 @@ description: Drupal Commerce and Ubercart
 storage: 75GB
 bandwidth: 1.5TB
 ssl: true
+database: 4GB
+button-id: hosting-2-5-3
 
 ---
 
