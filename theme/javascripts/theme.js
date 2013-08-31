@@ -66,11 +66,12 @@ $('document').ready(function() {
     e.preventDefault();
     $('#sign-in').modal();
   });
-  $('.icon-github').on('click', function(e) {
+  $('#sign-in i').on('click', function(e) {
     e.preventDefault();
-    OAuth.popup('github', function(err, result) {
+    var provider = event.target.id.replace("provider-","");
+    OAuth.popup(provider, function(err, result) {
       // $('#sign-in .modal-body').css('font-size', '.8em');
-      result.provider = 'github'      
+      result.provider = provider    
       $.post('/user/oauth', result, function(data) {
         $('#sign-in .modal-body').html(JSON.stringify(data));
       });      
