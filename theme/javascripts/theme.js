@@ -69,7 +69,7 @@ $('document').ready(function() {
   $('.icon-github').on('click', function(e) {
     e.preventDefault();
     OAuth.popup('github', function(err, result) {
-      $('#sign-in .modal-body').css('font-size', '1.3em');
+      // $('#sign-in .modal-body').css('font-size', '.8em');
       result.provider = 'github'      
       $.post('/user/oauth', result, function(data) {
         $('#sign-in .modal-body').html(JSON.stringify(data));

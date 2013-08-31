@@ -543,9 +543,11 @@ input[type="color"]:focus,
 	margin-top: 10px;
 	padding: 11px 8px 5px 8px;
 }
-#footer .copyright .social.yt {
+#footer .copyright .social.gh {
 	padding: 8px 8px 5px 8px;
 	margin-top: 10px;
+  color: gray;
+  text-decoration:none;
 }
 #footer .copyright .copy p {
 	margin-top: 20px;
@@ -902,6 +904,19 @@ input[type="color"]:focus,
 	height: 23px;
 }
 
+.icon-github-alt{
+  font-size: 25px;
+}
+
+.ico-service {
+  font-size: 75px;
+  text-align: center;
+}
+.ico-service a {
+  color: #999;
+  text-decoration: none;
+}
+
 /* Social icons
 -------------------------------------------------- */
 i.social {
@@ -926,3 +941,9 @@ i.rss { background-position: -194px -51px; }
 i.myspace { background-position: -233px -51px; }
 
 
+#sign-in .modal-body i {
+  font-size: 5em;
+}
+#sign-in i {
+  cursor: pointer;
+}
