@@ -53,7 +53,7 @@
                   <li>
                       <a class="btn-header" href="signup.html">Sign up</a>
                   </li>
-                  <li><a class="btn-header" href="signin.html">Sign in</a></li>
+                  <li><a class="btn-header" id="login" href="#">Sign in</a></li>
               </ul>
           </div>
       </div>
@@ -61,7 +61,15 @@
   </div>
 
   {{{ content }}}
-
+  <div class="modal hide fade" id="sign-in">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3>Sign In</h3>
+    </div>
+    <div class="modal-body">
+      <i class="icon-github"></i>
+    </div>
+  </div>
   <div id="footer">
       <div class="container">
           <div class="row">
@@ -142,6 +150,7 @@
           </div>
       </div>
   </div>
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
   <script src="https://js.stripe.com/v1/"></script>
   {{# javascripts.load }}
     oauth.js
