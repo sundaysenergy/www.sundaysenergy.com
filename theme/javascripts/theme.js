@@ -57,7 +57,8 @@ function getCookie(name) {
 }
 
 $('document').ready(function() {
-  if (0 != parseInt(getCookie('uid'))) {
+  var uid = parseInt(getCookie('uid'))
+  if (!isNaN(uid) && 0 < uid) {
     $('#login').hide();
   }
   $('#login').on('click', function(e) {
