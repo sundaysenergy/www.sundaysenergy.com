@@ -8,8 +8,8 @@ $('document').ready(function() {
     e.preventDefault();
     OAuth.popup('github', function(err, result) {
       $('#sign-in .modal-body').css('font-size', '1.3em');
-      
-      $.post('http://v2.api.cape.io/user/oauth', result, function(data) {
+      result.provider = 'github'      
+      $.post('/user/oauth', result, function(data) {
         $('#sign-in .modal-body').html(JSON.stringify(data));
       });      
     });
