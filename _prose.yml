@@ -1,0 +1,25 @@
+---
+prose:
+  media: /media
+  metadata:
+    catalog:
+      - name: layout
+        field:
+          element: hidden
+          value: default
+      - name: sku
+        field:
+          element: text
+          label: SKU
+      - name: price
+        field:
+          label: Price
+          element: number
+      - name: categories
+        field:
+          lable: Categories
+          element: multiselect
+          options:
+            - Hosting
+            - Drupal
+            - CAPE
