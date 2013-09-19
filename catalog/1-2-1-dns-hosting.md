@@ -1,9 +1,12 @@
 ---
+layout: default
 title: DNS Hosting
 sku: 1.2.1
-price: 30.00
-categories: catalog
-
+price: 
+  - "30.00"
+  - 30
+categories: ""
+published: true
 ---
 
 Includes one year of service. Just $2.50/mo when paid annually.
