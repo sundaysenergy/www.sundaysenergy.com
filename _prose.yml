@@ -2,6 +2,7 @@
 prose:
   media: /media
   metadata:
+
     catalog:
       - name: title
         field:
@@ -23,15 +24,28 @@ prose:
         field:
           label: Price
           element: number
-      - name: categories
-        field:
-          label: Categories
-          element: multiselect
-          options:
-            - Hosting
-            - Drupal
-            - CAPE
+
     catalog/hosting:
+      - name: title
+        field:
+          element: text
+          lable: Title
+      - name: subtitle
+        field:
+          element: text
+          lable: Sub-Title
+      - name: layout
+        field:
+          element: hidden
+          value: default
+      - name: sku
+        field:
+          element: text
+          label: SKU
+      - name: price
+        field:
+          label: Price
+          element: number
       - name: time
         field:
           element: select
@@ -54,6 +68,6 @@ prose:
           label: Database size in GB
       - name: sites
         field:
-          label: Site Qty
+          label: Qty of Sites Allowed
           element: number
 
