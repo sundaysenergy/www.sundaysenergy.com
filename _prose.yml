@@ -7,11 +7,11 @@ prose:
       - name: title
         field:
           element: text
-          lable: Title
+          label: Title
       - name: subtitle
         field:
           element: text
-          lable: Sub-Title
+          label: Sub-Title
       - name: layout
         field:
           element: hidden
@@ -29,11 +29,11 @@ prose:
       - name: title
         field:
           element: text
-          lable: Title
+          label: Title
       - name: subtitle
         field:
           element: text
-          lable: Sub-Title
+          label: Sub-Title
       - name: layout
         field:
           element: hidden
