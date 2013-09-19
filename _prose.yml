@@ -7,6 +7,10 @@ prose:
         field:
           element: text
           lable: Title
+      - name: subtitle
+        field:
+          element: text
+          lable: Sub-Title
       - name: layout
         field:
           element: hidden
@@ -27,3 +31,29 @@ prose:
             - Hosting
             - Drupal
             - CAPE
+    catalog/hosting:
+      - name: time
+        field:
+          element: select
+          label: Time Increment Per
+          options:
+            - month
+            - year
+            - week
+      - name: storage
+        field:
+          element: number
+          label: Storage in GB
+      - name: bandwidth
+        field:
+          element: number
+          label: Bandwidth in GB
+      - name: database
+        field:
+          element: number
+          label: Database size in GB
+      - name: sites
+        field:
+          label: Site Qty
+          element: number
+
