@@ -3,6 +3,10 @@ prose:
   media: /media
   metadata:
     catalog:
+      - name: title
+        field:
+          element: text
+          lable: Title
       - name: layout
         field:
           element: hidden
