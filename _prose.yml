@@ -17,7 +17,7 @@ prose:
           element: number
       - name: categories
         field:
-          lable: Categories
+          label: Categories
           element: multiselect
           options:
             - Hosting
