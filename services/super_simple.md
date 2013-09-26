@@ -1,5 +1,7 @@
 ---
 title: SuperSimple CDN
+icon: ico-cloud
+link: http://www.supersimple.co
 
 ---
 

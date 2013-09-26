@@ -1,8 +1,8 @@
 ---
 prose:
   media: /media
-  metadata:
 
+  metadata:
     catalog:
       - name: title
         field:

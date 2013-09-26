@@ -1,5 +1,7 @@
 ---
 title: CAPE
+icon: icon-sitemap
+link: http://www.cape.io
 
 ---
 
