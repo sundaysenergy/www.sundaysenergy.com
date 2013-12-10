@@ -1,3 +1,3 @@
 ## Sundays Energy
 
-Uses Ruhoh 2.2 
+Uses CAPE.io
